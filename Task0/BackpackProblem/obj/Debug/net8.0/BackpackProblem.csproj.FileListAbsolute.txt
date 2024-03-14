@@ -1,0 +1,15 @@
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\bin\Debug\net8.0\BackpackProblem.exe
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\bin\Debug\net8.0\BackpackProblem.deps.json
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\bin\Debug\net8.0\BackpackProblem.runtimeconfig.json
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\bin\Debug\net8.0\BackpackProblem.dll
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\bin\Debug\net8.0\BackpackProblem.pdb
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.AssemblyInfoInputs.cache
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.AssemblyInfo.cs
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.csproj.CoreCompileInputs.cache
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.sourcelink.json
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.dll
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\refint\BackpackProblem.dll
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.pdb
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\BackpackProblem.genruntimeconfig.cache
+D:\VS projects\Csharp.NET-PWR\Task0\BackpackProblem\obj\Debug\net8.0\ref\BackpackProblem.dll
