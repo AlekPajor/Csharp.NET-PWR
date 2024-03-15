@@ -134,6 +134,8 @@ namespace UnitTests
         [ExpectedException(typeof(ArgumentException))]
         public void TestNegativeCapacity()
         {
+            // testing if negative capacity throws an exception
+
             BackpackClass backpack = new BackpackClass(5, 123);
             backpack.Solve(-1);
         }
