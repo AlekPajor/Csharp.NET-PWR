@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
+[assembly: InternalsVisibleTo("UnitTests")]
 namespace Backpack
 {
     internal class Result
     {
-        List<int> ItemsNumbers = [];
-        private int SumOfValue { get; }
-        private int SumOfWeight { get; }
+        public List<int> ItemsNumbers = [];
+        public int SumOfValue { get; }
+        public int SumOfWeight { get; }
 
         public Result(List<Item> items) 
         {

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
+[assembly: InternalsVisibleTo("UnitTests")]
 namespace Backpack
 {
     internal class BackpackClass
@@ -28,13 +30,18 @@ namespace Backpack
 
         public Result Solve(int capacity)
         {
+            if (capacity < 0)
+            {
+                throw new ArgumentException("Capacity cannot be negative.");
+            }
+
             int c = capacity;
             List<Item> FinalItems = new List<Item>();
             Items = Items.OrderByDescending(p => p.ValueToWeightRatio).ToList();
 
             foreach (Item item in Items)
             {
-                if(c - item.Weight > 0)
+                if(c - item.Weight >= 0)
                 {
                     FinalItems.Add(item);
                     c -= item.Weight;

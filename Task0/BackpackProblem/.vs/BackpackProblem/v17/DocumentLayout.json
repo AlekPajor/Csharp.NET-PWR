@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9361689-22A3-4A6B-972A-53C6C7F8DB43}|..\\UnitTests\\UnitTests.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +25,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "DocumentIndex": 2,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Result.cs",
+              "RelativeDocumentMoniker": "Result.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Result.cs",
+              "RelativeToolTip": "Result.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAwAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T16:25:04.857Z",
+              "WhenOpened": "2024-03-15T15:01:05.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Item.cs",
+              "RelativeDocumentMoniker": "Item.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Item.cs",
+              "RelativeToolTip": "Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T15:01:03.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BackpackClass.cs",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\BackpackClass.cs",
+              "RelativeDocumentMoniker": "BackpackClass.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\BackpackClass.cs",
+              "RelativeToolTip": "BackpackClass.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwCIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T15:00:55.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\UnitTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\UnitTests\\UnitTest1.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\UnitTests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\UnitTests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:21:11.836Z",
               "EditorCaption": ""
             }
           ]
