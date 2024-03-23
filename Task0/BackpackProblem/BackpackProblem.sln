@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackpackProblem", "BackpackProblem.csproj", "{6FA4C2CA-9713-40A5-8DED-7744FD116454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{F9361689-22A3-4A6B-972A-53C6C7F8DB43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{F9361689-22A3-4A6B-972A-53C6C7F8DB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "..\WinFormsApp1\WinFormsApp1.csproj", "{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F9361689-22A3-4A6B-972A-53C6C7F8DB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9361689-22A3-4A6B-972A-53C6C7F8DB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9361689-22A3-4A6B-972A-53C6C7F8DB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

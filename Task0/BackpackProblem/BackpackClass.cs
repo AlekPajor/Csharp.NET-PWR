@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("UnitTests")]
+[assembly: InternalsVisibleTo("WinFormsApp1"), InternalsVisibleTo("GUI")]
 namespace Backpack
 {
     internal class BackpackClass
@@ -53,12 +54,14 @@ namespace Backpack
 
         public override string ToString()
         {
-            string result = $"Number of available Items = {NumberOfItems}\n";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Number of available Items = {NumberOfItems}");
+
             foreach (Item item in Items)
             {
-                result += $"Item: {item.Number}, Weight: {item.Weight}, Value: {item.Value}\n";
+                sb.AppendLine($"Item: {item.Number}, Weight: {item.Weight}, Value: {item.Value}\n");
             }
-            return result;
+            return sb.ToString();
         }
     }
 }

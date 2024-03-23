@@ -3,19 +3,18 @@
   "WorkspaceRootPath": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9361689-22A3-4A6B-972A-53C6C7F8DB43}|..\\UnitTests\\UnitTests.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}|..\\WinFormsApp1\\WinFormsApp1.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7428BC3-A25B-451A-909A-4F5BF2E7AB23}|..\\WinFormsApp1\\WinFormsApp1.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|d:\\vs projects\\csharp.net-pwr\\task0\\backpackproblem\\backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA4C2CA-9713-40A5-8DED-7744FD116454}|BackpackProblem.csproj|solutionrelative:backpackclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +24,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\WinFormsApp1\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\WinFormsApp1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T17:19:17.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "..\\WinFormsApp1\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T16:02:44.721Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -35,45 +63,22 @@
               "RelativeDocumentMoniker": "Result.cs",
               "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Result.cs",
               "RelativeToolTip": "Result.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAwAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T15:01:05.494Z"
+              "WhenOpened": "2024-03-23T15:41:23.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Item.cs",
-              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Item.cs",
-              "RelativeDocumentMoniker": "Item.cs",
-              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\Item.cs",
-              "RelativeToolTip": "Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T15:01:03.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "BackpackClass.cs",
               "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\BackpackClass.cs",
               "RelativeDocumentMoniker": "BackpackClass.cs",
               "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\BackpackProblem\\BackpackClass.cs",
               "RelativeToolTip": "BackpackClass.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCIAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T15:00:55.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\UnitTests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\UnitTests\\UnitTest1.cs",
-              "ToolTip": "D:\\VS projects\\Csharp.NET-PWR\\Task0\\UnitTests\\UnitTest1.cs",
-              "RelativeToolTip": "..\\UnitTests\\UnitTest1.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAwwIwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T14:21:11.836Z",
+              "WhenOpened": "2024-03-15T15:00:55.962Z",
               "EditorCaption": ""
             }
           ]
