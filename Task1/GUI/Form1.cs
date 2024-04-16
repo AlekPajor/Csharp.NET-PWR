@@ -1,4 +1,5 @@
 using ChuckNorrisJokes;
+using System.Text;
 
 namespace GUI
 {
@@ -94,6 +95,29 @@ namespace GUI
                 {
                     textBox.Text = existingJoke.Value;
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void statisticsBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var jokeCounts = favourites.MyFavorites
+                    .GroupBy(j => j.Category)
+                    .Select(g => new { Category = g.Key, Count = g.Count() })
+                    .ToList();
+
+                StringBuilder message = new StringBuilder();
+                foreach (var jokeCount in jokeCounts)
+                {
+                    message.AppendLine($"{jokeCount.Category}: {jokeCount.Count}");
+                }
+
+                MessageBox.Show(message.ToString(), "Joke Counts by Category", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {

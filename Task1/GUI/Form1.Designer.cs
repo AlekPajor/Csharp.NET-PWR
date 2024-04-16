@@ -50,6 +50,7 @@
             randomFavoritesBtn = new Button();
             inputTextBox = new TextBox();
             getByIdBtn = new Button();
+            statisticsBtn = new Button();
             SuspendLayout();
             // 
             // animalBtn
@@ -231,7 +232,7 @@
             likeBtn.Name = "likeBtn";
             likeBtn.Size = new Size(167, 77);
             likeBtn.TabIndex = 17;
-            likeBtn.Text = "Like";
+            likeBtn.Text = "Add to Favourites";
             likeBtn.UseVisualStyleBackColor = true;
             likeBtn.Click += likeBtn_Click;
             // 
@@ -256,14 +257,14 @@
             // 
             // inputTextBox
             // 
-            inputTextBox.Location = new Point(252, 480);
+            inputTextBox.Location = new Point(155, 480);
             inputTextBox.Name = "inputTextBox";
             inputTextBox.Size = new Size(232, 31);
             inputTextBox.TabIndex = 20;
             // 
             // getByIdBtn
             // 
-            getByIdBtn.Location = new Point(252, 517);
+            getByIdBtn.Location = new Point(155, 517);
             getByIdBtn.Name = "getByIdBtn";
             getByIdBtn.Size = new Size(232, 34);
             getByIdBtn.TabIndex = 21;
@@ -271,11 +272,22 @@
             getByIdBtn.UseVisualStyleBackColor = true;
             getByIdBtn.Click += getByIdBtn_Click;
             // 
+            // statisticsBtn
+            // 
+            statisticsBtn.Location = new Point(415, 480);
+            statisticsBtn.Name = "statisticsBtn";
+            statisticsBtn.Size = new Size(157, 71);
+            statisticsBtn.TabIndex = 22;
+            statisticsBtn.Text = "Get statistics";
+            statisticsBtn.UseVisualStyleBackColor = true;
+            statisticsBtn.Click += statisticsBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(615, 655);
+            Controls.Add(statisticsBtn);
             Controls.Add(getByIdBtn);
             Controls.Add(inputTextBox);
             Controls.Add(randomFavoritesBtn);
@@ -328,5 +340,6 @@
         private Button randomFavoritesBtn;
         private TextBox inputTextBox;
         private Button getByIdBtn;
+        private Button statisticsBtn;
     }
 }
