@@ -47,6 +47,9 @@
             textBox = new TextBox();
             likeBtn = new Button();
             label1 = new Label();
+            randomFavoritesBtn = new Button();
+            inputTextBox = new TextBox();
+            getByIdBtn = new Button();
             SuspendLayout();
             // 
             // animalBtn
@@ -241,11 +244,41 @@
             label1.TabIndex = 18;
             label1.Text = "Copyright: © 2024 Aleksander Pajorski";
             // 
+            // randomFavoritesBtn
+            // 
+            randomFavoritesBtn.Location = new Point(130, 372);
+            randomFavoritesBtn.Name = "randomFavoritesBtn";
+            randomFavoritesBtn.Size = new Size(300, 74);
+            randomFavoritesBtn.TabIndex = 19;
+            randomFavoritesBtn.Text = "Display random from favourites";
+            randomFavoritesBtn.UseVisualStyleBackColor = true;
+            randomFavoritesBtn.Click += randomFavoritesBtn_Click;
+            // 
+            // inputTextBox
+            // 
+            inputTextBox.Location = new Point(252, 480);
+            inputTextBox.Name = "inputTextBox";
+            inputTextBox.Size = new Size(232, 31);
+            inputTextBox.TabIndex = 20;
+            // 
+            // getByIdBtn
+            // 
+            getByIdBtn.Location = new Point(252, 517);
+            getByIdBtn.Name = "getByIdBtn";
+            getByIdBtn.Size = new Size(232, 34);
+            getByIdBtn.TabIndex = 21;
+            getByIdBtn.Text = "Get joke by ID";
+            getByIdBtn.UseVisualStyleBackColor = true;
+            getByIdBtn.Click += getByIdBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(615, 655);
+            Controls.Add(getByIdBtn);
+            Controls.Add(inputTextBox);
+            Controls.Add(randomFavoritesBtn);
             Controls.Add(label1);
             Controls.Add(likeBtn);
             Controls.Add(textBox);
@@ -292,5 +325,8 @@
         private TextBox textBox;
         private Button likeBtn;
         private Label label1;
+        private Button randomFavoritesBtn;
+        private TextBox inputTextBox;
+        private Button getByIdBtn;
     }
 }

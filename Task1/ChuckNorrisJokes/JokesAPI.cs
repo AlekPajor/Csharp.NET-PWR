@@ -18,7 +18,16 @@ namespace ChuckNorrisJokes
         public async Task<string> getJokeBycategory(string category)
         {
             httpClient = new HttpClient();
-            String url = $"https://api.chucknorris.io/jokes/random?category={category}";
+            string url = $"https://api.chucknorris.io/jokes/random?category={category}";
+            string response = await httpClient.GetStringAsync(url);
+            joke = JsonSerializer.Deserialize<Joke>(response);
+            return joke.value;
+        }
+
+        public async Task<string> getJokeById(string id)
+        {
+            httpClient = new HttpClient();
+            string url = $"https://api.chucknorris.io/jokes/{id}";
             string response = await httpClient.GetStringAsync(url);
             joke = JsonSerializer.Deserialize<Joke>(response);
             return joke.value;
