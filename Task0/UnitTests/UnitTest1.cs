@@ -18,7 +18,8 @@ namespace UnitTests
 
         }
 
-        [TestMethod] public void TestAllFaultyItems()
+        [TestMethod] 
+        public void TestAllFaultyItems()
         {
             // testing if result is correct for backpack that cannot contain any given items 
 

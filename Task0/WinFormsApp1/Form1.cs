@@ -36,7 +36,7 @@ namespace WinFormsApp1
                 
                 if (!int.TryParse(txtbSeed.Text, out int seed)) 
                 {
-                    txtbCapacity.BackColor = Color.IndianRed;
+                    txtbSeed.BackColor = Color.IndianRed;
                     throw new Exception("Invalid number");
                 }
 
