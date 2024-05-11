@@ -1,0 +1,120 @@
+﻿@page "/movies"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject MovieRating.Data.ApplicationDbContext DB
+@using MovieRating.Components
+@using Microsoft.EntityFrameworkCore
+@attribute [StreamRendering]
+@rendermode InteractiveServer
+
+<PageTitle>Movie Page</PageTitle>
+
+<h1>Movie Page</h1>
+
+@if (fetchedMovieList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Release Date</th>
+                <th>Rating</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in displayedMovieList)
+            {
+                <tr>
+                    <td>@movie.Title</td>
+                    <td>@movie.RelaseDate</td>
+                    <td>@movie.Rate</td>
+
+                    <td>
+                        <a href="@($"movies/edit?id={movie.Id}")">Edit</a> |
+                        <a href="@($"movies/details?id={movie.Id}")">Details</a> |
+                        <a href="@($"movies/delete?id={movie.Id}")">Delete</a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+<button type="button" class="btn btn-primary" @onclick="sortByTitle">Sort by Title</button>
+<button type="button" class="btn btn-primary" @onclick="sortByReleaseDate">Sort by Release Date</button>
+<button type="button" class="btn btn-primary" @onclick="sortByRate">Sort by Rating</button>
+<button type="button" class="btn btn-primary" @onclick="removeSort">Remove sorting</button>
+
+@code
+{
+    List<Movie> fetchedMovieList = new List<Movie>();
+    List<Movie> displayedMovieList = new List<Movie>();
+    private SortOrder dateSortOrder = SortOrder.Descending;
+    private SortOrder rateSortOrder = SortOrder.Descending;
+    private SortOrder titleSortOrder = SortOrder.Descending;
+
+    protected override async Task OnInitializedAsync()
+    {
+        fetchedMovieList = await DB.Movie.ToListAsync();
+        displayedMovieList = fetchedMovieList;
+    }
+
+    private void sortByReleaseDate()
+    {
+        if (dateSortOrder == SortOrder.Ascending)
+        {
+            displayedMovieList = fetchedMovieList.OrderByDescending(x => x.RelaseDate).ToList();
+            dateSortOrder = SortOrder.Descending;
+        }
+        else
+        {
+            displayedMovieList = fetchedMovieList.OrderBy(x => x.RelaseDate).ToList();
+            dateSortOrder = SortOrder.Ascending;
+        }
+
+    }
+
+    private void sortByRate()
+    {
+        if (rateSortOrder == SortOrder.Ascending)
+        {
+            displayedMovieList = fetchedMovieList.OrderByDescending(x => x.Rate).ToList();
+            rateSortOrder = SortOrder.Descending;
+        }
+        else
+        {
+            displayedMovieList = fetchedMovieList.OrderBy(x => x.Rate).ToList();
+            rateSortOrder = SortOrder.Ascending;
+        }
+    }
+
+    private void sortByTitle()
+    {
+        if (titleSortOrder == SortOrder.Ascending)
+        {
+            displayedMovieList = fetchedMovieList.OrderByDescending(x => x.Title).ToList();
+            titleSortOrder = SortOrder.Descending;
+        }
+        else
+        {
+            displayedMovieList = fetchedMovieList.OrderBy(x => x.Title).ToList();
+            titleSortOrder = SortOrder.Ascending;
+        }
+
+    }
+
+    private void removeSort()
+    {
+        displayedMovieList = fetchedMovieList;
+    }
+
+    public enum SortOrder
+    {
+        Ascending,
+        Descending
+    }
+}

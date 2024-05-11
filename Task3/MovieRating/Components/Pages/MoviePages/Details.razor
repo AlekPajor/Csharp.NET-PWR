@@ -1,0 +1,94 @@
+﻿@page "/movies/details"
+
+@using MovieRating.Components
+@using MovieRating.Components.Account
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Identity
+@using MovieRating.Data
+
+@inject MovieRating.Data.ApplicationDbContext DB
+@inject NavigationManager NavigationManager
+
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Details</PageTitle>
+
+<h1>Details</h1>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    @if (movie is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <img src="@movie.Image" width="350px" height="350px" />
+        <dl class="row">
+            <dt class="col-sm-2">Title</dt>
+            <dd class="col-sm-10">@movie.Title</dd>
+            <dt class="col-sm-2">Description</dt>
+            <dd class="col-sm-10">@movie.Description</dd>
+            <dt class="col-sm-2">RelaseDate</dt>
+            <dd class="col-sm-10">@movie.RelaseDate</dd>
+            <dt class="col-sm-2">Rate</dt>
+            <dd class="col-sm-10">@movie.Rate</dd>
+        </dl>
+        <div class="mb-3">
+            <label for="rate" class="form-label">Rate:</label>
+            <InputNumber id="rate" @oninput="InputRating" @bind-Value="addedRating" class="form-control" Min="0" Max="10" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <button class="btn btn-primary" @onclick="AddRating">Add Rating</button>
+        </div>
+        <div>
+            <a href="@($"/movies/edit?id={movie.Id}")">Edit</a> |
+            <a href="@($"/movies")">Back to List</a>
+        </div>
+    }
+</div>
+
+@code {
+    private int? addedRating;
+    Movie? movie;
+
+    [SupplyParameterFromQuery]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        movie = await DB.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+
+        if (movie is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+    }
+
+    private void InputRating(ChangeEventArgs e)
+    {
+        addedRating = Convert.ToInt32(e.Value);
+    }
+
+    private void AddRating()
+    {
+        if(addedRating is null)
+        {
+            return;
+        }
+
+        float rating = movie.Rate == null ? 0 : movie.Rate.Value;
+        int counter = movie.RateCount == null ? 0 : movie.RateCount.Value;
+
+        rating = ((rating * counter) + addedRating.Value) / (counter + 1);
+
+        movie.Rate = rating;
+        movie.RateCount = counter + 1;
+
+        DB.Movie.Update(movie);
+        DB.SaveChanges();
+
+        addedRating = null;
+    }
+}
